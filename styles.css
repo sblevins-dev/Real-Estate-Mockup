@@ -30,6 +30,55 @@
     color: orange;
 }
 
+.buy {
+    position: relative;
+}
+
+.buy-menu {
+    position: absolute;
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    display: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.buy:hover .buy-menu {
+    display: block;
+}
+
+.buy-menu-links {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+}
+
+.buy-menu-links a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.buy-menu-links a:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.buy-menu-links a:hover {
+    color: orange;
+    background-color: rgb(245, 245, 245);
+}
+
+
+
 
 /*Hero Image*/
 .main {
